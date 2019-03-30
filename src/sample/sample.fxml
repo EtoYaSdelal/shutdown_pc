@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="startButton" layoutX="123.0" layoutY="13.0" mnemonicParsing="false" onAction="#timerCountdown" text="start" />
+      <TextField fx:id="textField" layoutX="177.0" layoutY="32.0" onKeyPressed="#numericOnly" prefHeight="25.0" prefWidth="77.0" />
+      <Label fx:id="outLabel" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="3.0" layoutY="74.0" prefHeight="45.0" prefWidth="262.0" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="stopButton" layoutX="123.0" layoutY="49.0" mnemonicParsing="false" onAction="#timerStop" text="stop" />
+      <Label fx:id="infoLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="25.0" opacity="0.38" prefHeight="38.0" prefWidth="96.0" text="Enter shutdown&#10;timer in minutes" />
+   </children>
+</AnchorPane>
