@@ -6,7 +6,6 @@ class ShutDownManager {
     static void shutDownSystem() {
         String property = System.getProperty("os.name");
         System.out.println(property);
-
         if (property.toLowerCase().contains("windows")) {
             String[] commands = {"shutdown", "-s"};
             try {

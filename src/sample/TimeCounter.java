@@ -14,12 +14,10 @@ class TimeCounter {
         deltaTime = new GregorianCalendar();
         deltaTime.set(0, 0, 0, 0, 0, 0);
     }
-
     Calendar countTime(Integer minutes) {
         futureTime.add(Calendar.MINUTE, minutes);
         Long deltaMillis = futureTime.getTimeInMillis() - existTime.getTimeInMillis();
         deltaTime.add(Calendar.MILLISECOND, deltaMillis.intValue());
-
         return deltaTime;
     }
 }

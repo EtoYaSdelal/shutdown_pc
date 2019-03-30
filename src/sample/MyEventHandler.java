@@ -24,7 +24,6 @@ class MyEventHandler implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {
-
         calendar.add(Calendar.SECOND, -1);
         time--;
         clockLabel.setText(calendar.get(Calendar.HOUR_OF_DAY) + ":"

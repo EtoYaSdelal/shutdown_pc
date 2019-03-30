@@ -38,7 +38,7 @@ public class Controller {
         textField.clear();
         startButton.setDisable(true);
         textField.setDisable(true);
-        infoLabel.setText("Your pc will\n" + "tern off");
+        infoLabel.setText("Your pc will\n" + "turn off");
         if (timeline != null) {
             timeline.stop();
         }
@@ -47,7 +47,6 @@ public class Controller {
         timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1), new MyEventHandler(sec, outLabel, timeline)));
         timeline.playFromStart();
     }
-
     public void timerStop(ActionEvent event) {
         textField.clear();
         startButton.setDisable(false);
